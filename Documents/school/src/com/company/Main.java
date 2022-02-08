@@ -36,13 +36,13 @@ class Group{
     }
 
     public boolean addStudent(Student student){
-        if (enrolled < students.length){
-            students[enrolled++] = student;
+        if (this.enrolled < students.length){
+            this.students[this.enrolled++] = student;
             System.out.println("Estudiante aceptado: " + student.getName() + " " + student.getLastName());
             return true;
         }
         System.out.println("Estudiante rechazado: " + student.getName() + " " + student.getLastName());
-        rejected ++;
+        this.rejected ++;
         return false;
     }
 
